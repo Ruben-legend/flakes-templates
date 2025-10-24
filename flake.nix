@@ -1,19 +1,18 @@
 {
-  outputs = {...}: {
-    templates.simple = {
-      description = "A simple flake";
-      path = ./templates/java;
-      welcomeText = ''
-        Welcome to Nix!
+  description = "A Collection of Personal Nix Flake Templates";
 
-        This flake exports a single package, `hello`, which can be
-        executed by running:
+  outputs = { ... }: {
+    templates = {
+      java = {
+        path = ./templates/java;
+        description = "A java template.";
+      };
 
-        $ nix run #.hello
+      rust = {
+        path = ./templates/rust;
+        description = "A rust template.";
+      };
 
-        Check out my article series on Nix for more information!
-        https://dev.to/arnu515/my-new-nix-series-2cc3
-      '';
     };
   };
 }

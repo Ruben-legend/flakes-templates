@@ -12,5 +12,5 @@
         description = "this is a template of rust";
       };
     };
-  }
+  };
 }

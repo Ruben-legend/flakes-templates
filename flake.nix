@@ -1,9 +1,8 @@
 {
   description = "A Collection of Personal Nix Flake Templates";
 
-  outputs = { self, ... }:
-  let 
-    temp = {
+  outputs = { ... }: {
+    templates = {
       java = {
         path = ./templates/java;
         description = "A java template.";
@@ -13,8 +12,7 @@
         path = ./templates/rust;
         description = "A rust template.";
       };
+
     };
-  in {
-    templates = temp;
   };
 }

@@ -12,8 +12,7 @@
         path = ./templates/rust;
         description = "A rust template.";
       };
-
-      defaultTemplate = self.rust;
+      
     };
   };
 }

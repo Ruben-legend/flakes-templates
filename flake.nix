@@ -1,7 +1,7 @@
 {
   description = "A Collection of Personal Nix Flake Templates";
 
-  outputs = { ... }: {
+  outputs = { self }: {
     templates = {
       java = {
         path = ./templates/java;
@@ -12,7 +12,6 @@
         path = ./templates/rust;
         description = "A rust template.";
       };
-
     };
   };
 }

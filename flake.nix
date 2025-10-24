@@ -1,7 +1,7 @@
 {
   description = "A Collection of personal nix flake template";
 
-  output = {self, ...}:{
+  outputs = {self, ...}:{
     templates = {
       java = {
         path = ./java;

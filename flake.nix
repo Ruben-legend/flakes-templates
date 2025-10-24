@@ -1,20 +1,19 @@
 {
-  description = "A Collection of personal nix flake template";
+  description = "A Collection of Personal Nix Flake Templates";
 
-  outputs = {self, ...}:{
+  outputs = { self, ... }: {
     templates = {
       java = {
-        path = ./java;
-        description = "This is a template of java";
+        path = ./templates/java;
+        description = "A java template.";
       };
 
       rust = {
-        path = ./rust;
-        description = "this is a template of rust";
+        path = ./templates/rust;
+        description = "A rust template.";
       };
 
+      defaultTemplate = self.rust;
     };
-
   };
-
 }

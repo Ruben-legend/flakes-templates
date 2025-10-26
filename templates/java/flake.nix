@@ -30,10 +30,12 @@
           nativeBuildInputs = with pkgs; [ pkg-config ];
           
           shellHook = ''
-            echo "Java development environment ready!"
+            echo "☕Java development environment ready!"
             java -version
             echo "Gradle version:"
             gradle --version
+            echo "Maven version:"
+            maven --version
           '';
         };
       }

@@ -9,7 +9,7 @@
       };
       node = {
         path = ./templates/node;
-        description = "Node flake template"
+        description = "Node flake template";
       };
       rust = {
         path = ./templates/rust;

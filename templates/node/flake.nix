@@ -1,5 +1,5 @@
 {
-  description = "React dev environment";
+  description = "Node dev environment";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -41,7 +41,7 @@
           ];
 
           shellHook = ''
-            echo "🚀 React development environment ready!"
+            echo "🚀 Node development environment ready!"
             echo "Node.js version: $(node --version)"
             echo "npm version: $(npm --version)"
             

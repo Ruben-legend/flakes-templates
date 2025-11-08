@@ -5,12 +5,15 @@
     templates = {
       java = {
         path = ./templates/java;
-        description = "A java template.";
+        description = "Java flake template.";
       };
-
+      node = {
+        path = ./templates/node;
+        description = "Node flake template"
+      };
       rust = {
         path = ./templates/rust;
-        description = "A rust template.";
+        description = "Rust flake template.";
       };
     };
   };
